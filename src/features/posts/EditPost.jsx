@@ -35,37 +35,43 @@ const EditPost = () => {
   const canSave = Boolean(titleInput) && Boolean(contentInput);
 
   return (
-    <section>
+    <section className="post_inputs">
       <h2>Edit Post</h2>
       <form action="">
-        <label htmlFor="postTitle">Post Title: </label>
-        <input
-          id="postTitle"
-          name="postTitle"
-          type="text"
-          value={titleInput}
-          onChange={(e) => setTitleInput(e.target.value)}
-        />
-        <label htmlFor="postAuthor">Author :</label>
-        <select
-          value={userName}
-          onChange={(e) => {
-            setUserName(e.target.value);
-          }}
-        >
-          <option value=""></option>
-          <option value="muhsin">muhsin</option>
-          <option value="sajid">sajid</option>
-          <option value="shahin">shahin</option>
-        </select>
-        <label htmlFor="content">Content: </label>
-        <input
-          id="postContent"
-          name="postContent"
-          type="text"
-          value={contentInput}
-          onChange={(e) => setContentInput(e.target.value)}
-        />
+        <div>
+          <label htmlFor="postTitle">Post Title: </label>
+          <input
+            id="postTitle"
+            name="postTitle"
+            type="text"
+            value={titleInput}
+            onChange={(e) => setTitleInput(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="postAuthor">Author :</label>
+          <select
+            value={userName}
+            onChange={(e) => {
+              setUserName(e.target.value);
+            }}
+          >
+            <option value=""></option>
+            <option value="muhsin">muhsin</option>
+            <option value="sajid">sajid</option>
+            <option value="shahin">shahin</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="content">Content: </label>
+          <input
+            id="postContent1"
+            name="postContent"
+            type="text"
+            value={contentInput}
+            onChange={(e) => setContentInput(e.target.value)}
+          />
+        </div>
         <button onClick={handleEditPost} type="button" disabled={!canSave}>
           Save Edited Post
         </button>

@@ -54,3 +54,23 @@ ul {
 nav :hover {
   cursor: pointer;
 }
+
+.username {
+  color: grey;
+  margin-top: 0;
+}
+
+.content {
+  text-align: center;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+.post_inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input {
+  margin: 10px;
+}

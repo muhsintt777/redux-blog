@@ -1,8 +1,20 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
-  { id: "1", title: "react", content: "its nice..." },
-  { id: "2", title: "redux", content: "bamabam" },
+  {
+    id: "1",
+    title: "ReactJS",
+    userName: "Jordan Walke",
+    content:
+      "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.",
+  },
+  {
+    id: "2",
+    title: "Redux",
+    userName: "Dan Abramov",
+    content:
+      "Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to Facebook's Flux architecture, it was created by Dan Abramov and Andrew Clark.",
+  },
 ];
 
 export const postsSlice = createSlice({

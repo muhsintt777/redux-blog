@@ -9,8 +9,10 @@ const PostsList = () => {
   const renderedPosts = posts.map((post) => (
     <article key={post.id}>
       <h3>{post.title}</h3>
-      <p>by {post.userName ? post.userName : "unknown user"}</p>
-      <p>{post.content}</p>
+      <p className="username">
+        by {post.userName ? post.userName : "unknown user"}
+      </p>
+      <p className="content">{post.content}</p>
       <div className="buttons">
         <Link to={`/editPost/${post.id}`}>
           <button>Edit</button>
