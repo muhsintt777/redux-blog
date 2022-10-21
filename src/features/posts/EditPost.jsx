@@ -36,7 +36,7 @@ const EditPost = () => {
 
   return (
     <section className="post_inputs">
-      <h2>Edit Post</h2>
+      <h2>Edit Posts</h2>
       <form action="">
         <div>
           <label htmlFor="postTitle">Post Title: </label>
