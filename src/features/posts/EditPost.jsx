@@ -15,7 +15,7 @@ const EditPost = () => {
     setTitleInput(post.title);
     setContentInput(post.content);
     setUserName(post.userName);
-  }, []);
+  }, [post]);
 
   const [titleInput, setTitleInput] = useState("");
   const [contentInput, setContentInput] = useState("");

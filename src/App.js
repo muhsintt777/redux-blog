@@ -9,7 +9,7 @@ function App() {
     <main className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<PostsList />} />
+        <Route index path="/" element={<PostsList />} />
         <Route path="/addPost" element={<AddPostForm />} />
         <Route path="/editPost/:id" element={<EditPost />} />
       </Routes>
